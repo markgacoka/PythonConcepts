@@ -4,11 +4,11 @@ from twilio.rest import Client
 #testAuthToken = '50a36dbec29da8d7ac44ab1cf9700b7d'
 #client = Client(testaccountSid, testAuthToken)
 
-accountSid = 'ACd40fb677edaf206f6ac8f70cda89de08'
-authToken = '4426a8b9a4b1c2819611669ddcc5c80c'
+accountSid = 'TWILIO ACCOUNT API ID'
+authToken = 'TWILIO AUTH TOKEN'
 client = Client(accountSid, authToken)
 
 print("Sending message...")
-myMessage = client.messages.create(body="$2", from_='+12624574265', to='+254717270977')
-#myMessage = client.messages.create(body="$2", from_='+15005550006', to='+254717270977')
+myMessage = client.messages.create(body="CUSTOM MESSAGE", from_='NUMBER BY TWILIO', to='YOUR NUMBER')
+#myMessage = client.messages.create(body="CUSTOM MESSAGE", from_='NUMBER BY TWILIO', to='YOUR NUMBER')
 print("Sent message")
